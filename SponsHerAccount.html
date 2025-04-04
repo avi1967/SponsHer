@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Account Type</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fffdfd;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .brand-name {
+            font-family: 'Dancing Script', cursive;
+            color: #f58ca0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-bottom: 60px;
+        }
+
+        .account-card {
+            width: 280px;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .account-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .account-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 576px) {
+            .account-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header with Logo -->
+        <div class="header">
+            <img src="C:\Users\Ananya\Downloads\logo.png" alt="SponsHer Logo" class="logo" onerror="this.style.display='none'">
+            <div class="brand-name">SponsHer</div>
+            <h2 class="page-title">Choose Your Account Type</h2>
+        </div>
+
+        <!-- Account Type Cards -->
+        <div class="card-container">
+            <!-- Professional Account -->
+            <div class="card account-card" onclick="window.location.href='professional-login.html'">
+                <img src="C:\Users\Ananya\Downloads\Med-Multi-sport.jpg" alt="Professional">
+                <div class="card-body">
+                    <h5 class="card-title">Login as a Professional</h5>
+                    <p class="card-text">Access exclusive tools and opportunities to grow your career.</p>
+                </div>
+            </div>
+
+            <!-- Sponsor Account -->
+            <div class="card account-card" onclick="window.location.href='sponsor-login.html'">
+                <img src="C:\Users\Ananya\Downloads\businessman-man-person-618613.jpg" alt="Sponsor">
+                <div class="card-body">
+                    <h5 class="card-title">Login as a Sponsor</h5>
+                    <p class="card-text">Support events, discover talent, and grow your network.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
