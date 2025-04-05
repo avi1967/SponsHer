@@ -10,66 +10,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa; /* Light background color */
+            background-color: #f8f9fa;
         }
-        .logo-placeholder {
-            width: 40px; /* Space for logo */
-            height: 40px;
-            margin-left: 10px;
-            background-color: #ccc; /* Placeholder color */
+        .brand-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
         }
         .brand-name {
             font-family: 'Dancing Script', cursive;
-            color: #f8b0b0; /* Pastel Pink Color */
+            color: #f8b0b0;
             font-size: 36px;
             font-weight: bold;
-            display: inline-block;
+        }
+        .brand-logo {
+            height: 36px;
+            width: auto;
+            margin-left: 10px;
+        }
+        .card {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+        .btn a:hover {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="card p-4" style="width: 400px;">
-            <!-- SponsHer Brand Name and Logo Placeholder -->
-            <div class="text-center mb-4">
-                <span class="brand-name">SponsHer</span>
-                <!-- Space for the logo -->
-                <div class="logo-placeholder d-inline-block"></div>
+<div class="container d-flex justify-content-center align-items-center min-vh-100 px-3">
+    <div class="card p-4">
+        <!-- SponsHer Brand Name and Logo -->
+        <div class="brand-header">
+            <span class="brand-name">SponsHer</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJ4ZfyYVX2puRb_9Jnb8_a0bJG6R-SVKhgA&s"
+                 alt="Logo" class="brand-logo" onerror="this.style.display='none'">
+        </div>
+
+        <h3 class="card-title text-center mb-4">Login for Sponsors</h3>
+        <form>
+            <!-- Username -->
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
             </div>
 
-            <h3 class="card-title text-center mb-4">Login  for Sponsors</h3>
-            <form>
-                <!-- Username -->
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
-                </div>
-
-                <!-- Password -->
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-                </div>
-
-                <!-- Login Button -->
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary"><a href="SponsHerHomePage.html" style="color:white">Login</a></button>
-                </div>
-            </form>
-
-            <!-- Forgot Password Link -->
-            <div class="text-center mt-3">
-                <small><a href="#">Forgot your password?</a></small>
+            <!-- Password -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
             </div>
 
-            <!-- Sign Up Link -->
-            <div class="text-center mt-3">
-                <small>New to SponsHer? <a href="SponsHerRegSpons.html">Sign up here</a></small>
+            <!-- Login Button -->
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">
+                    <a href="SponsHerHomePage.html">Login</a>
+                </button>
             </div>
+        </form>
+
+        <!-- Forgot Password Link -->
+        <div class="text-center mt-3">
+            <small><a href="#">Forgot your password?</a></small>
+        </div>
+
+        <!-- Sign Up Link -->
+        <div class="text-center mt-3">
+            <small>New to SponsHer? <a href="SponsHerRegSpons.html">Sign up here</a></small>
         </div>
     </div>
+</div>
 
-   
 </body>
 </html>
+
